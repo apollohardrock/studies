@@ -1,6 +1,7 @@
 import pyodbc
+from datetime import date
 
-def conecta_ao_banco(driver='SQL Server', server='SGTI00\SQLEXPRESS', database='Nome_Banco_Dados', username=None, password=None, trusted_connection='yes'):
+def conecta_ao_banco(driver='SQL Server', server='SKVM08\SQLEXPRESS', database='VolpeSkyglass', username='dashboard', password='%Skygl@ss2023$', trusted_connection='no'):
 
     string_conexao = f"DRIVER={driver};SERVER={server};DATABASE={database}; UID={username};PWD={password};TRUSTED_CONNECTION={trusted_connection}"
 
@@ -11,17 +12,17 @@ def conecta_ao_banco(driver='SQL Server', server='SGTI00\SQLEXPRESS', database='
 
 conexao, cursor = conecta_ao_banco()
 
-clientes = cursor.execute('SELECT * FROM Numeros').fetchall()
+hoje = date.today()
 
-atracao_parque = clientes[0]
-atracao_plataforma = clientes[1]
-atracao_abusado = clientes[2]
+visitantes_parque = cursor.execute(f"SELECT COUNT(PK_ID) FROM pq_catraca WHERE dh_inclusao BETWEEN '{hoje} 00:00:00' AND '{hoje} 23:59:59' AND FK_ATRACAO ='6';").fetchone()
 
-a = atracao_parque[0]
-b = atracao_parque[1]
-c = atracao_plataforma[0]
-d = atracao_plataforma[1]
-e = atracao_abusado[0]
-f = atracao_abusado[1]
+visitantes_plataforma = cursor.execute(f"SELECT COUNT(PK_ID) FROM pq_catraca WHERE dh_inclusao BETWEEN '{hoje} 00:00:00' AND '{hoje} 23:59:59' AND FK_ATRACAO ='7';").fetchone()
 
-print(a,b,c,d,e,f)
+visitantes_abusado = cursor.execute(f"SELECT COUNT(PK_ID) FROM pq_catraca WHERE dh_inclusao BETWEEN '{hoje} 00:00:00' AND '{hoje} 23:59:59' AND FK_ATRACAO ='8';").fetchone()
+
+a = visitantes_parque[0]
+b = visitantes_plataforma[0]
+c = visitantes_abusado[0]
+
+print(a,b,c)
+
