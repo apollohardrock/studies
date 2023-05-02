@@ -1,7 +1,7 @@
 import pyodbc
 from datetime import date
 
-def conecta_ao_banco(driver='SQL Server', server='SKVM08\SQLEXPRESS', database='VolpeSkyglass', username='dashboard', password='%Skygl@ss2023$', trusted_connection='no'):
+def conecta_ao_banco(driver='SQL Server', server='server', database='database', username='dashboard', password='senha123', trusted_connection='no'):
 
     string_conexao = f"DRIVER={driver};SERVER={server};DATABASE={database}; UID={username};PWD={password};TRUSTED_CONNECTION={trusted_connection}"
 
