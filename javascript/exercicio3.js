@@ -1,7 +1,7 @@
 const { gets, print } = require("./funcoes-auxiliares-ex3");
 
-const valorSalario = gets();
-const valorBeneficios = gets();
+const valorSalario = parseFloat(gets());
+const valorBeneficios = parseFloat(gets());
 
 
 function calcularPorcentagem(valor, percentual) {
@@ -24,4 +24,4 @@ const valorImposto = calcularPorcentagem(valorSalario, aliquotaImposto)
 
 const valorSalarioLiquido = valorSalario - valorImposto + valorBeneficios
 
-print(valorSalarioLiquido)
+print(parseFloat(valorSalarioLiquido))

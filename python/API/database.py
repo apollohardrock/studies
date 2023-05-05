@@ -1,19 +1,19 @@
-from  pythonsql import a,b,c,d,e,f
+# from  pythonsql import a,b,c,d,e,f
 
 clientes = [
     {
-        'id': 1,
-        'atracao': a,
-        'quantidade': b
+        'id': 10,
+        'atracao': 20,
+        'quantidade': 30
     },
     {
-        'id': 2,
-        'atracao': c,
-        'quantidade': d
+        'id': 40,
+        'atracao': 50,
+        'quantidade': 60
     },
     {
-        'id': 3,
-        'atracao': e,
-        'quantidade': f
+        'id': 70,
+        'atracao': 80,
+        'quantidade': 90
     },
 ]
