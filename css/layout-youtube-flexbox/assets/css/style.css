@@ -1,0 +1,164 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(59, 59, 59);
+}
+
+header div {
+    flex-grow: 1;
+}
+
+.menu-left {
+    display: flex;
+    flex-direction: row;
+}
+.menu-left img {
+    padding: 10px;
+}
+
+.search {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: solid 1px;
+    border-radius: 10px;
+    max-width: 540px;
+}
+
+.search input {
+    width: 500px;
+    background-color: rgb(75, 75, 75);
+    border-radius: 10px 0 0 10px;
+}
+
+.search button {
+    background-color: rgba(75, 75, 75, 0.11);
+    border-radius: 10px;
+}
+
+.search button:active {
+    background-color: rgba(75, 75, 75, 0.11);
+    transform: translateY(4px);
+  }
+
+.menu-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.menu-right img {
+    margin-right: 20px;
+}
+
+#avatar {
+    width: 40px;
+    border-radius: 25px;
+}
+
+body {
+    background-color: rgb(29, 29, 29);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.video-play {
+    width: 1280px;
+    height: 720px;
+    background-color: black;
+    margin-top: 30px;
+}
+
+main h2 {
+    color: white;
+}
+
+.canal-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-canal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 290px;
+}
+
+.info-canal h3 {
+    color: white;
+}
+
+.info-canal p {
+    color: rgb(204, 204, 204);
+    font-size: 12px;
+}
+
+.info-canal button {
+    border-radius: 20px;
+    background-color: rgb(59, 59, 59);
+}
+
+.action-buttons button img {
+    padding: 5px;
+}
+.action-buttons button p {
+    padding-right: 10px;
+}
+
+.action-buttons button {
+    border-radius: 20px;
+    display: inline-flex;
+    align-items:center;
+    padding: 5px;
+    background-color: rgb(59, 59, 59);
+}
+
+aside {
+    margin-top: 30px;
+}
+
+.suggestions {
+    display: flex;
+    flex-direction: row;
+}
+
+.suggestions img {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.suggestions div {
+    margin: 10px;
+}
+
+.suggestions h3 {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.suggestions p {
+    color: rgb(204, 204, 204);
+    font-size: 12px;
+}
