@@ -1,0 +1,145 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+/* header */
+
+header {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-row: 1;
+    grid-template-rows: 40px;
+    padding: 10px;
+    background-color: rgb(59, 59, 59);
+}
+
+.menu-left {
+    display: grid;
+    grid-template-columns: 10% auto;    
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+}
+
+.menu-left img {
+    padding: 10px;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: auto 10%;
+    border: solid 1px;
+    border-radius: 10px;
+    max-width: 540px;    
+    justify-items: start;
+    justify-self: center;
+}
+
+.search input {
+    width: 500px;
+    background-color: rgb(75, 75, 75);
+    border-radius: 10px 0 0 10px;
+}
+
+.search button {
+    background-color: rgba(75, 75, 75, 0.11);
+    border-radius: 10px;
+}
+
+.search button:active {
+    background-color: rgba(75, 75, 75, 0.11);
+    transform: translateY(4px);
+  }
+
+.menu-right {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-right: 20px;    
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-right img {
+    margin-right: 20px;
+}
+
+#avatar {
+    width: 40px;
+    border-radius: 25px;
+}
+
+
+/* body */
+
+body {
+    background-color: rgb(29, 29, 29);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 15% auto;
+}
+
+/* sidebar */
+
+nav {
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 20% auto;
+    justify-content: start;
+    align-items: center;
+    justify-items: center;
+    font-size: 13px;
+    margin: 15px;
+}
+
+
+/* main */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-items: center;
+    gap: 15px;
+    margin: 20px;
+    margin-right: 200px;
+}
+
+main img {
+    width: 300px;
+}
+.suggestions {
+    display: grid;
+}
+
+.suggestions img {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.suggestions div {
+    margin: 10px;
+}
+
+.suggestions h3 {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.suggestions p {
+    color: rgb(204, 204, 204);
+    font-size: 12px;
+}
+
+.info-canal {
+    display: grid;
+    grid-template-columns: 20% auto;
+}
