@@ -1,0 +1,79 @@
+@media screen and (min-width: 429px) {
+    header {
+        background-image: url(..//imgs/Header\ Background-1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    header h1 {
+        font-size: 56px;
+        padding: 0 30%;
+    }
+
+    header p {
+        padding: 0 20%;
+    }
+
+    .btn-dld {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    .btn-dld button {
+        min-width: 250px;
+    }
+
+    main section {
+        padding: 50px 115px;
+        margin-top: 20px;
+    }
+
+    .section-1, .section-3 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section div {
+        padding: 0 60px;
+    }
+
+    section div h2 {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+   
+    .section-2 {
+        flex-direction: row-reverse;
+    }
+
+    .section-4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-4 div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-4 div p {
+        text-align: center;
+    }
+
+    p {
+        font-size: clamp(16px,2vw,20px);
+        line-height: 1.625;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+}
